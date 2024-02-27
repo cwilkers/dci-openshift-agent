@@ -394,7 +394,7 @@ provisionhost ansible_user=kni prov_nic=eno1 pub_nic=ens3 ansible_ssh_common_arg
 ```
 
 > NOTE: If the jumpbox server is in a different network than the baremetal network, then
-> include `extcirdnet=<baremetal-network/mask>` in the `all:vars` section of the inventory
+> include `extcidrnet=<baremetal-network/mask>` in the `all:vars` section of the inventory
 
 > NOTE: If you choose to create the `provision_cache_store` folder manually, make sure to set the `container_file_t` setype for it. This will help ensure a smooth installation of OCP nightly builds.
 
